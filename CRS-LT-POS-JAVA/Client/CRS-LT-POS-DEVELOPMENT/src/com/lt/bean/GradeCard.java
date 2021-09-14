@@ -1,0 +1,32 @@
+package com.lt.bean;
+
+public class GradeCard {
+
+	private int StudentId;
+	private String CourseId;
+	private Enum Grade;
+	public int getStudentId() {
+		return StudentId;
+	}
+	public void setStudentId(int studentId) {
+		StudentId = studentId;
+	}
+	public String getCourseId() {
+		return CourseId;
+	}
+	public void setCourseId(String courseId) {
+		CourseId = courseId;
+	}
+	public Enum getGrade() {
+		return Grade;
+	}
+	public void setGrade(Enum grade) {
+		Grade = grade;
+	}
+	@Override
+	public String toString() {
+		return "GradeCard [StudentId=" + StudentId + ", CourseId=" + CourseId + ", Grade=" + Grade + "]";
+	}
+	
+	
+}
