@@ -6,7 +6,7 @@ public interface CourseInterface {
 
 	public String createCourse();
 	public String listCourse();
-	public void updateCourse(Course course);
+	public String updateCourse(Course course);
 	public String deleteCourse(String CourseId);
 	
 	

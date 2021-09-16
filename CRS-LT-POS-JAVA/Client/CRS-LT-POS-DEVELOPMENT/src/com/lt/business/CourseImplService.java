@@ -1,80 +1,80 @@
 package com.lt.business;
 
-import java.util.Scanner;
-import com.lt.bean.Course;
+import java.util.ArrayList;
+import java.util.List;
 
+import com.lt.bean.Course;
 
 public class CourseImplService implements CourseInterface {
 
-	Course course[]= new Course[3];
+
+	List<Course> course1 = new ArrayList<Course>();
+	Course objt = new Course();	
+
 	@Override
 	public String createCourse() {
-		course[0]=new Course();
-		course[0].setCourseId("A001");
-		course[0].setCourseName("Physics");
-		
-		course[1]=new Course();
-		course[1].setCourseId("A002");
-		course[1].setCourseName("Math");
-		
-		course[2]=new Course();
-		course[2].setCourseId("A003");
-		course[2].setCourseName("Chemistry");
-		
-		return "Course Added";
+
+//		course.add( new Course("101", "physics"));
+//		course.add( new Course("102", "Chemistry"));
+//		course.add( new Course("103", "MAths"));
+//		course.add( new Course("104", "Biology"));
+//		course.add( new Course("105", "English"));
+
+
+		return "Course Added....";
 	}
 
 	@Override
 	public String listCourse() {
-        for(Course  cs : course){
-			
-	   		System.out.println("details of Course--> " +cs.getCourseId() + "" +cs.getCourseName());
+		for(Course  cs : course1){
+
+			System.out.println("details of Course--> " +cs.getCourseId() + " " +cs.getCourseName());
 		}
 		return "list course";
 	}
 
 	@Override
-	public void updateCourse(Course courses) {
-          //System.out.println(courses+"****");
-          if(courses!=null) {
-        for(Course cs1: course)
-        {
-        	 //System.out.println(cs+"&&&&");
-            if(cs1.getCourseId()==courses.getCourseId())
-            {
-                cs1.setCourseName(courses.getCourseName());
-            }
-            //System.out.println(cs.getCourseId()+ "\n" + cs.getCourseName());
+	public String updateCourse(Course courses) {
+		if(courses!=null) {
+			for(Course cs1: course1)
+			{
+				if(cs1.getCourseId()==((Course) courses).getCourseId())
+				{
+					cs1.setCourseName(((Course) courses).getCourseName());
+				}
+				//System.out.println(cs.getCourseId()+ "\n" + cs.getCourseName());
 
-        }
-          }
-        //return "Course Updated";
+			}
+		}
+		return "Course Updated";
 	}
 
 	@Override
 	public String deleteCourse(String CourseId) {
 
-        System.out.println("details deleted of course--> ");
-        int index =0;
-        Course course1[]=new Course[course.length-1];
-        
-        for(int i=0;i<course.length;i++) {
-            if(course[i].getCourseId() == CourseId) {
-                index = i;
-            }
-        }
-        for (int i = 0; i < course.length-1; i++) {
-            if(i<index)
-                course1[i]=course[i];
-            else
-                course1[i]=course[i+1];
-        }
+		System.out.println("details deleted of course--> "); 
 
-        for(Course cs : course1){
-            System.out.println("details of course--> " +cs.getCourseId() + " " +cs.getCourseName());
-        }
-        return "Course "+CourseId+ " Delete Successfully... ";
+		for(int i=0;i<course1.size();i++) {
+			if(course1.contains(objt.getCourseId())) {
+				course1.remove(objt);
+			}
+		}
+		/*for(int i=0;i<course.size();i++){
+			if(course.get(i).getCourseId() == "CourseId");
+			    course.remove(CourseId);
+			    break;
+	    }*/
 
-    }
+		/*for(Course  cs : course){
+			if(cs.getCourseId() == CourseId) {
+				course.remove(cs);
+			}
+		}*/
 
+		for(Course cs : course1){
+			System.out.println("details of course--> "+cs.getCourseId() + " " +cs.getCourseName());
+		} 
+		return "Course "+CourseId+" Delete Successfully... ";
+	
+       }
 }

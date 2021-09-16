@@ -3,7 +3,8 @@ package com.lt.business;
 public class CatlogImplService implements CatlogInterface {
 
 	@Override
-	public String getCourseId() {
+	public String getCourseId() 
+	{
 		// TODO Auto-generated method stub
 		return null;
 	}

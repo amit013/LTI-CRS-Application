@@ -2,8 +2,13 @@ package com.lt.business;
 
 public interface PaymentInterface {
 
-	public String getPayment();
-	public String setPayment();
-	public String getNotification();
+	
 
-}
+		public void getPayment();//mode,scanner
+		public void online();
+		public void offline();
+
+	}
+
+
+
