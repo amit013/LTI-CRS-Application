@@ -1,12 +1,23 @@
 package com.lt.bean;
 
 public class Student {
-
+	
 	private int StudentId;
 	private String StudentName;
 	private Long StudentContactNo;
 	private String StudentEmailId;
 	private String StudentAddress;
+	
+	public Student(int studentId, String studentName, Long studentContactNo, String studentEmailId,
+			String studentAddress) 
+	{
+		super();
+		StudentId = studentId;
+		StudentName = studentName;
+		StudentContactNo = studentContactNo;
+		StudentEmailId = studentEmailId;
+		StudentAddress = studentAddress;
+	}
 	
 	public int getStudentId() {
 		return StudentId;

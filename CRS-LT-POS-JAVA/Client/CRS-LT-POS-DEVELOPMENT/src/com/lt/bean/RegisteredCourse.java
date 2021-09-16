@@ -9,6 +9,7 @@ public class RegisteredCourse {
 	private Date DateOfRegistration;
 	private double CourseFee;
 	private Enum Grade;
+	
 	public String getCourseId() {
 		return CourseId;
 	}

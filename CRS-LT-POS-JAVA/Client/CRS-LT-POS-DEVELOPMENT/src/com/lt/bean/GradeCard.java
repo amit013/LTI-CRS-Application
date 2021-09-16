@@ -2,6 +2,12 @@ package com.lt.bean;
 
 public class GradeCard {
 
+	public GradeCard(int studentId, String courseId, Enum grade) {
+		super();
+		StudentId = studentId;
+		CourseId = courseId;
+		Grade = grade;
+	}
 	private int StudentId;
 	private String CourseId;
 	private Enum Grade;

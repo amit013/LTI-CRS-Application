@@ -2,6 +2,7 @@ package com.lt.bean;
 
 public class User {
 
+	
 	private String Username;
 	private String Password;
 	private String Role;
@@ -28,6 +29,11 @@ public class User {
 	public String toString() {
 		return "User [Username=" + Username + ", Password=" + Password + ", Role=" + Role + "]";
 	}
-	
+	public User(String username, String password, String role) {
+		super();
+		Username = username;
+		Password = password;
+		Role = role;
+	}
 	
 }
