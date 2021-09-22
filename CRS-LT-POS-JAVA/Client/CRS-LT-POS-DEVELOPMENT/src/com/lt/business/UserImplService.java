@@ -1,17 +1,50 @@
 package com.lt.business;
+import java.sql.SQLException;
 
-import java.util.Scanner;
+import org.apache.log4j.Logger;
 
+import com.lt.dao.UserDAOImpl;
+import com.lt.exception.UserNotFoundException;
 
-import com.lt.bean.User;
-import com.lt.dao.UserDao;
+/**
+ * 
+ * @author G4-FullStackGroup
+ * Implementations of UserImplService from UserInterface
+ * 
+ */
+public class UserImplService implements UserInterface
+{
+	private static volatile UserImplService instance = null;
+	private static Logger logger = Logger.getLogger(UserImplService.class);
+	private UserImplService()
+    {
+    }
+    /**
+    * Method to make UserImplService Singleton
+    * @return
+    */
+    public static UserImplService getInstance()
+    {
+    if(instance == null)
+    {
+    synchronized(UserImplService.class){
+    instance = new UserImplService();
+    }
+    }
+    return instance;
+    }
 
-public class UserImplService implements UserInterface{
-
+	UserDAOImpl userDAOImpl=UserDAOImpl.getInstance();
+	
+	 /**
+	    * Method to make login
+	    * @return
+	    */
 	@Override
-	public String login() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean login(String username, String password) throws SQLException
+	{
+		
+		return userDAOImpl.verifyCredential(username, password);
 	}
 
 	@Override
@@ -19,29 +52,37 @@ public class UserImplService implements UserInterface{
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public boolean updatePassword(String username, String newPassword) 
+	{
+		return userDAOImpl.updateUserPassword(username, newPassword);
+	}
 
 	@Override
-	public void updatePassword() 
-	{
-		UserDao ud= new UserDao();
-		
-		Scanner in = new Scanner(System.in);
-		System.out.print("Enter username to be updated :"+"\n");    
-	    String uname = in.nextLine(); 
-	    System.out.print("Enter password to be updated :"+"\n");    
-	    String pwrd = in.nextLine(); 
-	    
-	    for(User u1: ud.getUserCredential())
-	    {
-	    	if(u1.getUsername()==uname)
-	    	{
-	    		u1.setPassword(pwrd);
-	    		System.out.println(u1.getUsername()+ " password has been updated");
-			    
-	    	}
-	    }
-	    System.out.println("Username not found, please enter the correct username");
-		
+	public boolean verifyCredentials(String userID, String password) throws UserNotFoundException {
+		// TODO Auto-generated method stub
+		return false;
 	}
+
+	@Override
+	public String signup(String username, String password, Object role) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean signup(int id, String name, String role, String password, int contact, String email,
+			String address) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public String getRole(String userId) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 
 }
