@@ -1,39 +1,72 @@
 package com.lt.bean;
 
+/**
+ * 
+ * @author G4-FullStackGroup
+ * User Class
+ * 
+ */
 public class User {
 
-	
+
 	private String Username;
 	private String Password;
-	private String Role;
-	
-	public String getUsername() {
-		return Username;
-	}
-	public void setUsername(String username) {
-		Username = username;
-	}
-	public String getPassword() {
-		return Password;
-	}
-	public void setPassword(String password) {
-		Password = password;
-	}
-	public String getRole() {
-		return Role;
-	}
-	public void setRole(String role) {
-		Role = role;
-	}
-	@Override
-	public String toString() {
-		return "User [Username=" + Username + ", Password=" + Password + ", Role=" + Role + "]";
-	}
-	public User(String username, String password, String role) {
+	private int RoleId;
+
+
+	/**
+	 *Parametrised Constructor
+	 * @return values
+	 */
+	public User(String username, String password, int roleId) {
 		super();
 		Username = username;
 		Password = password;
-		Role = role;
+		RoleId = roleId;
 	}
-	
-}
+
+
+	/**
+	 * Method to get Username
+	 * @param getUsername
+	 */
+	public String getUsername() {
+		return Username;
+	}
+	/**
+	 * Method to set User name
+	 * @param setUsername
+	 */
+	public void setUsername(String username) {
+		Username = username;
+	}
+	/**
+	 * Method to get Password
+	 * @param getPassword
+	 */
+	public String getPassword() {
+		return Password;
+	}
+	/**
+	 * Method to get Password
+	 * @param getPassword
+	 */
+	public void setPassword(String password) {
+		Password = password;
+	}
+	/**
+	 * Method to get RoleId
+	 * @param getRoleId
+	 */
+	public int getRoleId() {
+		return RoleId;
+	}
+	/**
+	 * Method to set RoleId
+	 * @param setRoleId
+	 */
+	public void setRoleId(int roleId) {
+		RoleId = roleId;
+	}
+
+}	

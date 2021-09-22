@@ -1,43 +1,57 @@
 package com.lt.bean;
 
-public class Admin {
-
-	private int AdminId;
+/**
+ * 
+ * @author G4-FullStackGroup
+ * Admit Class
+ * 
+ */
+public class Admin 
+{	
 	private String AdminName;
-	private Long ContactNo;
-	private String EmailId;
-	
-	public int getAdminId() {
-		return AdminId;
+	private String password;
+
+	/**
+	 *Parameterized Constructor
+	 * @return values
+	 */
+	public Admin(String adminName, String password) {
+		super();
+		AdminName = adminName;
+		this.password = password;
 	}
-	public void setAdminId(int adminId) {
-		AdminId = adminId;
-	}
+
+	/**
+	 * Method to get AdminName
+	 * @param getAdminName
+	 */
 	public String getAdminName() {
 		return AdminName;
 	}
+
+	/**
+	 * Method to set AdminName
+	 * @param setAdminName
+	 */
 	public void setAdminName(String adminName) {
 		AdminName = adminName;
 	}
-	public Long getContactNo() {
-		return ContactNo;
+
+	/**
+	 * Method to get AdminPassword
+	 * @param getAdminPassword
+	 */
+	public String getPassword() {
+		return password;
 	}
-	public void setContactNo(Long contactNo) {
-		ContactNo = contactNo;
+
+	/**
+	 * Method to set adminPassword
+	 * @param getAdminPassword
+	 */
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getEmailId() {
-		return EmailId;
-	}
-	public void setEmailId(String emailId) {
-		EmailId = emailId;
-	}
-	@Override
-	public String toString() {
-		return "Admin [AdminId=" + AdminId + ", AdminName=" + AdminName + ", ContactNo=" + ContactNo + ", EmailId="
-				+ EmailId + "]";
-	}
-	
-	
-	
+
 
 }
