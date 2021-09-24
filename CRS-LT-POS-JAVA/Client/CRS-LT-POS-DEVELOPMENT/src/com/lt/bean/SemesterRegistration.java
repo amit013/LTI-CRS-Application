@@ -25,7 +25,7 @@ public class SemesterRegistration
 	private int semester;
 	/**
 	 * Method to getStudentId
-	 * @param getStudentId
+	 * @return getStudentId
 	 */
 	public int getStudentId() {
 		return studentId;
@@ -39,7 +39,7 @@ public class SemesterRegistration
 	}
 	/**
 	 * Method to get Student name
-	 * @param getStudentname
+	 * @return getStudentname
 	 */
 	public String getStudentname() {
 		return Studentname;
@@ -53,7 +53,7 @@ public class SemesterRegistration
 	}
 	/**
 	 * Method to get Semester
-	 * @param getSemester
+	 * @return getSemester
 	 */
 	public int getSemester() {
 		return semester;
