@@ -17,7 +17,7 @@ public class Professor {
 
 	/**
 	 * Method to get ProfessorId
-	 * @param getProfessorId
+	 * @return getProfessorId
 	 */
 	public int getProfessorId() {
 		return ProfessorId;
@@ -31,7 +31,7 @@ public class Professor {
 	}
 	/**
 	 * Method to get ProfessorName
-	 * @param getProfessorName
+	 * @return getProfessorName
 	 */
 	public String getProfessorName() {
 		return ProfessorName;
@@ -45,7 +45,7 @@ public class Professor {
 	}
 	/**
 	 * Method to get ProfessorContactNo
-	 * @param getProfessorContactNo
+	 * @return getProfessorContactNo
 	 */
 	public Long getProfessorContactNo() {
 		return ProfessorContactNo;
@@ -59,7 +59,7 @@ public class Professor {
 	}
 	/**
 	 * Method to get ProfessorEmailId
-	 * @param getProfessorEmailId
+	 * @return getProfessorEmailId
 	 */
 	public String getProfessorEmailId() {
 		return ProfessorEmailId;
@@ -73,7 +73,7 @@ public class Professor {
 	}
 	/**
 	 * Method to get ProfessorAddress
-	 * @param getProfessorAddress
+	 * @return getProfessorAddress
 	 */
 	public String getProfessorAddress() {
 		return ProfessorAddress;
