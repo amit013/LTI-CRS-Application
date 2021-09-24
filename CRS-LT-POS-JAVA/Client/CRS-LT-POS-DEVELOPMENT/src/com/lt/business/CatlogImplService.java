@@ -31,27 +31,35 @@ public class CatlogImplService implements CatlogInterface {
 		}
 		return instance;
 	}
-
+	/*
+	 * Method to get courseId
+	 */
 	@Override
 	public String getCourseId() 
 	{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	/*
+	 * Method to get course Name
+	 */
 	@Override
 	public String getCourseName() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	/*
+	 * Method to set course Id
+	 */
 	@Override
 	public String setCourseId() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	/*
+	 * Method to set course Name
+	 */
 	public String setCourseName() {
 		// TODO Auto-generated method stub
 		return null;
