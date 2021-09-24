@@ -28,42 +28,42 @@ public class User {
 
 	/**
 	 * Method to get Username
-	 * @param getUsername
+	 * @return Username
 	 */
 	public String getUsername() {
 		return Username;
 	}
 	/**
 	 * Method to set User name
-	 * @param setUsername
+	 * @param Username
 	 */
 	public void setUsername(String username) {
 		Username = username;
 	}
 	/**
 	 * Method to get Password
-	 * @param getPassword
+	 * @return Password
 	 */
 	public String getPassword() {
 		return Password;
 	}
 	/**
-	 * Method to get Password
-	 * @param getPassword
+	 * Method to set Password
+	 * @param Password
 	 */
 	public void setPassword(String password) {
 		Password = password;
 	}
 	/**
 	 * Method to get RoleId
-	 * @param getRoleId
+	 * @return RoleId
 	 */
 	public int getRoleId() {
 		return RoleId;
 	}
 	/**
 	 * Method to set RoleId
-	 * @param setRoleId
+	 * @param RoleId
 	 */
 	public void setRoleId(int roleId) {
 		RoleId = roleId;
