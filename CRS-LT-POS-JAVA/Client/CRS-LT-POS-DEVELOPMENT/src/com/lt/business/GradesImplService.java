@@ -27,7 +27,11 @@ public class GradesImplService implements GradesInterface {
     }
     return instance;
     }
-
+	
+	 /**
+    * Method to make Submit grades 
+    * @return
+    */
 	@Override
 	public String submitGrades() {
 		// TODO Auto-generated method stub
