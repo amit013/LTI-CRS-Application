@@ -46,13 +46,18 @@ public class GradeCardImplService implements GradeCardInterface
 		// TODO Auto-generated method stub
 		
 	}
-
+	  /*
+	* Method to print GradeCard 
+	 */
 	@Override
 	public String printGradeCard() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
+	 /*
+	* Method to make payment 
+	 */
 	@Override
 	public void payFee() {
 		// TODO Auto-generated method stub
