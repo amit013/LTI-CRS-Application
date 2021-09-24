@@ -3,7 +3,7 @@ package com.lt.constants;
 
 	/**
 	 * 
-	 * @author JEDI-03
+	 * @author G4-Fullstack
 	 * Enumeration class for Gender
 	 *
 	 */
