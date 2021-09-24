@@ -53,7 +53,7 @@ public class RegisteredCourse {
 
 	/**
 	 * Method to get CourseId
-	 * @param getCourseId
+	 * @return getCourseId
 	 */
 	public String getCourseId() {
 		return CourseId;
@@ -67,7 +67,7 @@ public class RegisteredCourse {
 	}
 	/**
 	 * Method to getCourseName
-	 * @param getCourseCode
+	 * @return getCourseCode
 	 */
 	public String getCourseName() {
 		return CourseName;
@@ -81,7 +81,7 @@ public class RegisteredCourse {
 	}
 	/**
 	 * Method to getDateOfRegistration
-	 * @param getDateOfRegistration
+	 * @retrun getDateOfRegistration
 	 */
 	public Date getDateOfRegistration() {
 		return DateOfRegistration;
@@ -95,7 +95,7 @@ public class RegisteredCourse {
 	}
 	/**
 	 * Method to get CourseFee
-	 * @param getCourseFee
+	 * @return getCourseFee
 	 */
 	public String getCourseFee() {
 		return CourseFee;
@@ -109,7 +109,7 @@ public class RegisteredCourse {
 	}
 	/**
 	 * Method to get Grade
-	 * @param getGrade
+	 * @return getGrade
 	 */
 	public String getGrade() {
 		return Grade;
@@ -123,7 +123,7 @@ public class RegisteredCourse {
 	}
 	/**
 	 * Method to get StudentId
-	 * @param getStudentId
+	 * @return getStudentId
 	 */
 	public int getStudentId() {
 		return StudentId;
