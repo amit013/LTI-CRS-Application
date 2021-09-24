@@ -18,7 +18,7 @@ public class Payment {
 	
 	/**
 	 * Method to get Amount
-	 * @param getAmount
+	 * @return getAmount
 	 */
 	public double getAmount() {
 		return Amount;
@@ -33,7 +33,7 @@ public class Payment {
 	
 	/**
 	 * Method to get TransactionId
-	 * @param getTransactionId
+	 * @return getTransactionId
 	 */
 //	public String getTransactionId() {
 //		return TransactionId;
