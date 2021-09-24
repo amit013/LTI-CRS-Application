@@ -31,7 +31,9 @@ public class CatlogImplService implements CatlogInterface {
 		}
 		return instance;
 	}
-
+	/*
+	 * Method to get courseId
+	 */
 	@Override
 	public String getCourseId() 
 	{
