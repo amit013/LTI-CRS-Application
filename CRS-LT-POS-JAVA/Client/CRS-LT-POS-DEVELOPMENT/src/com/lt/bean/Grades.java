@@ -21,6 +21,7 @@ public class Grades {
 	}
 	/**
 	 *Method to set StudentId
+	 * @param StudentId
 	 */
 	public void setStudentId(int studentId) {
 		StudentId = studentId;
@@ -36,6 +37,7 @@ public class Grades {
 	
 	/**
 	 *Method to set grade
+	 * @param grade
 	 */
 	public void setGrade(String grade) {
 		Grade = grade;
@@ -51,6 +53,7 @@ public class Grades {
 	
 	/**
 	 *Method to set courseId 
+	 * @param courseId
 	 */
 	public void setCourseId(String courseId) {
 		CourseId = courseId;
