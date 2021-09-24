@@ -39,8 +39,8 @@ public class PaymentImplService implements PaymentInterface {
 	}
 
 	/*
-	 * Method to getPayment
-	 * 
+	 * Method to get payment mode and proceed with the mode 
+	 * @param studentId,fee
 	 */
 	@Override
 	public void getPayment(int studentId, double fee)
@@ -62,8 +62,8 @@ public class PaymentImplService implements PaymentInterface {
 		}
 	}
 	/*
-	 * Method to online payment
-	 * 
+	 * Method to make online payment
+	 * @param studentId,fee
 	 */
 
 	@Override
@@ -146,9 +146,10 @@ public class PaymentImplService implements PaymentInterface {
 		break;
 		}
 	}
+	
 	/*
-	 * Method to pay fee in offline mode
-	 * 
+	 * Method to make offline payment
+	 * @param studentId,fee
 	 */
 	@Override
 	public void offline() {
