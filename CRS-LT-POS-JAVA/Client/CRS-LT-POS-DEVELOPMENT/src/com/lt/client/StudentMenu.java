@@ -87,6 +87,7 @@ public class StudentMenu
 	}
 	/*
 	 * Method to do Payment
+	 *@param studentId
 	 */
 	public void doPayment(int studentId) {
 		double fee =0.0;
@@ -156,6 +157,7 @@ public class StudentMenu
 	}
 	/**
 	 * Method to courseRegistration
+	 *@param studentId
 	 */
 	private void courseRegistration(int studentId) { 
 
@@ -209,6 +211,7 @@ public class StudentMenu
 	}
 	/**
 	 * Method to dropRegCourse
+	 * @param StudentId
 	 */
 	private void dropRegCourse(int studentId) 
 	{
@@ -245,6 +248,7 @@ public class StudentMenu
 	}
 	/**
 	 * Method to viewRegistedCourse
+	 * @param StudentId
 	 */
 	private List<RegisteredCourse> viewRegistedCourse(int studentId)
 	{
