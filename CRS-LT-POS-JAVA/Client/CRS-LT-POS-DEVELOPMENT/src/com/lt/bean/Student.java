@@ -55,98 +55,98 @@ public class Student {
 
 	/**
 	 * Method to get StudentId
-	 * @param getStudentId
+	 * @return StudentId
 	 */
 	public int getStudentId() {
 		return StudentId;
 	}
 	/**
 	 * Method to set StudentId
-	 * @param setStudentId
+	 * @param StudentId
 	 */
 	public void setStudentId(int studentId) {
 		StudentId = studentId;
 	}
 	/**
 	 * Method to get StudentName
-	 * @param getStudentName
+	 * @return StudentName
 	 */
 	public String getStudentName() {
 		return StudentName;
 	}
 	/**
 	 * Method to set StudentName
-	 * @param setStudentName
+	 * @param StudentName
 	 */
 	public void setStudentName(String studentName) {
 		StudentName = studentName;
 	}
 	/**
 	 * Method to get StudentContactNo
-	 * @param getStudentContactNo
+	 * @return StudentContactNo
 	 */
 	public Long getStudentContactNo() {
 		return StudentContactNo;
 	}
 	/**
 	 * Method to set StudentContactNo
-	 * @param setStudentContactNo
+	 * @param StudentContactNo
 	 */
 	public void setStudentContactNo(Long studentContactNo) {
 		StudentContactNo = studentContactNo;
 	}
 	/**
 	 * Method to get StudentEmailId
-	 * @param getStudentEmailId
+	 * @return StudentEmailId
 	 */
 	public String getStudentEmailId() {
 		return StudentEmailId;
 	}
 	/**
 	 * Method to set StudentEmailId
-	 * @param setStudentEmailId
+	 * @param StudentEmailId
 	 */
 	public void setStudentEmailId(String studentEmailId) {
 		StudentEmailId = studentEmailId;
 	}
 	/**
 	 * Method to get StudentAddress
-	 * @param getStudentAddress
+	 * @return StudentAddress
 	 */
 	public String getStudentAddress() {
 		return StudentAddress;
 	}
 	/**
 	 * Method to set StudentAddress
-	 * @param setStudentAddress
+	 * @param StudentAddress
 	 */
 	public void setStudentAddress(String studentAddress) {
 		StudentAddress = studentAddress;
 	}
 	/**
 	 * Method to get Branch
-	 * @param getBranch
+	 * @return Branch
 	 */
 	public String getBranch() {
 		return Branch;
 	}
 	/**
-	 * Method to get Branch
-	 * @param getBranch
+	 * Method to set Branch
+	 * @param Branch
 	 */
 	public void setBranch(String branch) {
 		Branch = branch;
 	}
 	/**
 	 * Method to get IsApproved
-	 * @param getIsApproved
+	 * @return IsApproved
 	 */
 	public int getIsApproved() {
 		return IsApproved;
 	}
 	/**
-	 * Method to setIsApproved
-	 * @param setIsApproved
+	 * Method to set IsApproved
+	 * @param IsApproved
 	 */
 	public void setIsApproved(int isApproved) {
 		IsApproved = isApproved;
