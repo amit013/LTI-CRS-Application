@@ -223,19 +223,31 @@ public class StudentImplService implements StudentInterface
 		return true;
 
 	}
-
+	
+	/**
+	 * Method to view grade card
+	 * @return
+	 */
 	@Override
 	public String viewGradeCard() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
+	/**
+	 * Method to generate student id
+	 * @return
+	 */
 	@Override
 	public int generateStudentId() {
 		return sDao.getStudentCount()+1;
 
 	}
-
+	
+	/**
+	 * Method to check whether student is approved by admin or not
+	 * @param StudentId
+	 */
 	@Override
 	public boolean isApproved(int StudentId){
 		return sDao.isApproved(StudentId);
